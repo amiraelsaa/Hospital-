@@ -1,0 +1,780 @@
+/** General Properties **/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .3s ease-out;
+    font-family: 'Poppins', sans-serif;   
+}
+:root{
+    --white:#fff;
+    --grey:#777;
+    --black:#444;
+    --green:#16a085;
+    --text-shadow: 5px 2px rgba(0,0,0, .2);
+    --box-shadow: 3px 3px rgba(22, 160, 133, .2);
+    --border: 1px solid var(--green);
+}
+.heading{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: var(--black);
+    letter-spacing: 2.5px;
+    padding: 20px 0 20px 0;
+    text-shadow: var(--text-shadow);
+}
+.heading span{
+    color: var(--green);
+}
+.image{
+    width: 50%;
+}
+.image img
+{
+    width: 100%;
+}
+.content{
+    width: 50%;
+}
+.content .btn{
+    padding: 6px;
+    margin-top: 3px;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 7px;
+    background: #fff;
+    color: var(--green);
+    border: var(--border);
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: var(--box-shadow);
+}
+.content .btn:hover{
+    background: var(--green);
+    color: #fff;
+}
+.content .btn span{
+    font-size: 17px;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background: var(--green);
+}
+.content .btn:hover span{
+    color: var(--green);
+    background: #fff;
+    margin-left: 15px;
+}
+/** Start Section Header **/ 
+.header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    padding: 15px 95px;
+    box-shadow: 0 1px 15px rgb(0 0 0 / 10%);
+}
+.header .logo{
+    font-size: 23px;
+    color: var(--black);
+    text-decoration: none;
+}
+.header .logo i{
+    color: var(--green);
+}
+.header .navbar{
+    width: 45%;
+    
+}
+.header .navbar a{
+    text-decoration: none;
+    color: var(--grey);
+}
+.header .navbar a:hover{
+    color: var(--green);
+}
+#menu-btn{
+    color: var(--green);
+    background: #eee;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px 7px;
+    border-radius: 15%;
+    display: none;
+}
+/** End Section Header **/
+/** Start Section Home **/
+section{
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom:35px ;
+}
+section:nth-child(even){
+    background: #f5f5f5;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+    margin-bottom: 45px;
+}
+.home .content h3{
+    font-size: 45px;
+    color: var(--black);
+    line-height: 1.8;
+    font-weight: bold;
+    text-shadow: var(--text-shadow);
+}
+.home .content p{
+    font-size: 19px;
+    color: var(--grey);
+    line-height: 1.5;
+}
+.home .content .btn i{
+    font-size: 17px;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background: var(--green);
+}
+.home .content .btn:hover i{
+    color: var(--green);
+    background: #fff;
+    margin-left: 15px;
+}
+/** End Section Home **/
+/** Start Section Info **/
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 35px;
+    justify-content: space-between;
+}
+.info .item{
+    width: 23%;
+    padding: 10px;
+    margin: 6px;
+    border-radius: 10px;
+    text-align: center;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+.info .item i{
+    font-size: 40px;
+    color: var(--green);
+    padding-bottom: 10px;
+}
+.info .item h3{
+    padding: 5px;
+    font-size: 40px;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+}
+.info .item p{
+    font-size: 17px;
+    color: var(--grey);
+}
+/** End Section Info **/
+/** Start Section Services **/
+.service .boxs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.service .boxs .box{
+    padding: 28px;
+    width: 30%;
+    margin-bottom: 50px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);   
+}
+.service .box i{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: var(--green);
+}
+.service .box h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: var(--black);
+    font-weight: bold;
+}
+.service .box p{
+    color: var(--grey);
+    line-height: 1.8;
+    font-size: 15px;
+}
+.service .box .btn{
+    padding: 6px;
+    margin-top: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 7px;
+    background: #fff;
+    color: var(--green);
+    border: var(--border);
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: var(--box-shadow);
+}
+.service .box .btn:hover{
+    background: var(--green);
+    color: #fff;
+}
+.service .box .btn span{
+    font-size: 15px;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background: var(--green);
+}
+.service .box .btn:hover span{
+    color: var(--green);
+    background: #fff;
+    margin-left: 10px;
+}
+/** End Section Services **/
+/** Start Section About **/
+.about .parts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .content h3{
+    font-size: 45px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+}
+.about .content p{
+    padding: 5px 0px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--grey);
+}
+/** End Section About **/
+/** Start Section Doctors**/
+.doctor .boxs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.boxs .box{
+    width: 32%;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border: var(--border);
+    box-shadow: var(--box-shadow); 
+}
+.box-img{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.box .box-img img{
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+.box:hover .box-img img{
+    transform: scale(1.1);
+}
+.box h3{
+    font-size: 25px;
+    color: var(--black);
+    font-weight: 600;
+    cursor:pointer;
+    padding-top: 15px;
+}
+.box h3:hover{
+    color: var(--green);
+}
+.box span{
+    font-size: 16px;
+    color: var(--green);
+}
+.box .share{
+    padding-top: 13px;
+}
+.share a{
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 10px;
+    color: var(--green);
+    border: var(--border);
+}
+.share a i{
+    padding: 5px;
+    font-size: 17px;
+}
+.share a:hover{
+    color: var(--white);
+    background: var(--green);
+}
+/** End Section Doctors**/
+/** Start Section Booking**/
+.book .parts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.parts .content form{
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.content form h3{
+    font-size: 37px;
+    font-weight: bold;
+    color: var(--black);
+    padding-bottom: 30px;   
+}
+.content form input{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: var(--black);
+    text-transform: none;
+    border: var(--border);  
+}
+.content form .btn{
+    width: 30%;
+    text-transform: capitalize;
+}
+/** End Section Booking**/
+/** Start Section Reviwes **/
+.reviwe .boxs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.reviwe .box{
+    z-index: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.reviwe .box::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    z-index: -1;
+    width: 120%;
+    height: 225px;
+    background: var(--green);
+    transform: translateX(-50%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.reviwe .box img{
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.reviwe .box h3{
+    color: var(--white);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.reviwe .box .stars{
+    color: var(--white);
+    margin-bottom: 22px;
+}
+.reviwe .box .text{
+    line-height: 1.7;
+    color: var(--grey);
+    font-size: 17px;
+    padding-top: 20px;
+}
+/** End Section Reviwes **/
+/** Start Section Footer **/
+.footer .boxs{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(0, 0 ,0 , .1);
+}
+.footer .boxs .box{
+    margin-bottom: 0px;
+    border: none;
+    box-shadow: none;
+    width: 25%;
+}
+.footer .boxs .box h3{
+    padding: 10px 0px;
+    font-size: 25px;
+    text-align: left;
+    color: var(--black);
+}
+.footer .box .contact-us{
+    display: grid;
+    text-align: left;
+}
+.footer .contact-us a{
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 15px;
+    padding: 10px 0px;
+}
+.footer .contact-us a i{
+    color: var(--green);
+    padding-right: 3px;
+}
+.footer .contact-us a:hover i{
+    padding-right: 10px;
+}
+.footer .links .credit{
+    font-size: 19px;
+    color: var(--grey);
+    text-align: center;
+}
+.footer .links .credit span{
+    color: var(--green);
+}
+/** End Section Footer **/
+/** Media Queries **/
+@media (min-width:992px) and (max-width:1200px){
+    .header{
+        padding: 20px;
+        width: 100%;
+    } 
+    .doctor .boxs .box h3{
+        font-size: 23px;
+    }  
+    .doctor .boxs .box .box-img{
+        height: 390px;
+    } 
+    .footer .boxs .box{
+        width: 25%;
+    }
+    .footer .boxs .box h3{
+        padding: 5px 0;
+        font-size: 23px;
+    }
+    .footer .contact-us a{
+        font-size: 14px;
+        padding: 7px 0px;
+    }
+}
+@media (max-width:768px) and (max-width:991px){
+    .heading{
+        font-size: 45px;
+    }
+    #menu-btn{
+        display: initial;
+    }
+    .header .navbar{
+        position: absolute;
+        width: 30%;
+        top: 115%;
+        right: 20px;
+        opacity: 0;
+        background: #fff;
+        transform: scale(0);
+        display: block;
+        transition: none;
+        border-radius: 10px;
+        border: var(--border);
+        transform-origin: top right;
+        box-shadow: var(--box-shadow);
+    }
+    .header .navbar a{
+        font-size: 17px;
+        display: block;
+        margin: 14px;
+        padding-left: 10px;
+    }
+    .header .navbar.active{
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+    .info .item h3{
+        padding: 3px;
+        font-size: 35px;
+    }
+    .info .item i{
+        font-size: 35px;
+    }
+    .info .item p{
+        font-size: 14px;
+    }
+    .about .content h3{
+        margin-bottom: 5px;
+        font-size: 35px;
+    }
+    .about .content .btn{
+        margin-bottom: 25px;
+        margin-top: 0px;
+        font-size: 18px;
+    }
+    .doctor .box{
+        padding: 25px;
+    }
+    .doctor .boxs .box .box-img{
+        height: 260px;
+    }
+    .doctor .box img{
+        padding-bottom: 12px;
+    }
+    .doctor .box h3{
+        font-size: 16px;
+    }
+    .doctor .box span{
+        font-size: 14px;
+    }
+    .doctor .box .share{
+        padding-top: 10px;
+    }
+    .doctor .box .share a{
+        font-size: 12px;
+    }
+    .doctor .box .share a i{
+        padding: 4px;
+        font-size: 13px;
+    }
+    .book form h3{
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    .book form .btn{
+        width: 40%;
+    }
+    .reviwe .box .text{
+        font-size: 14px;
+        padding-top: 12px;
+    }
+    .footer .boxs{
+        margin-bottom: 15px;
+    }
+    .footer .boxs .box h3{
+        padding: 5px 0;
+        font-size: 16px;
+    }
+    .footer .contact-us a{
+        font-size: 12px;
+        padding: 8px 0px;
+    }
+    .footer .links .credit{
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+}
+@media (min-width:320px) and (max-width:767px){  
+    .header{
+        display: flex;
+        width: 100%;
+        padding-left: 10px;
+        justify-content: space-between;;
+    }
+    .header .logo{
+        font-size: 18px;
+    }
+    .header .navbar{
+        width: 90%;
+        text-align: start;
+        padding: 0;
+    }
+    #menu-btn{
+        font-size: 18px;
+        margin-right: -80px;
+    }
+    .home .image{
+        width: 100%;
+    }
+    .home .content{
+        width: 100%;
+    }
+    .home .content h3{
+        font-size: 25px;
+    }
+    .home .content p{
+        font-size: 14px;
+    }
+    .home .content .btn{
+        font-size: 15px;
+    }
+    .info{
+        margin-bottom: 0px;
+    }
+    .info .item{
+        width: 100%;
+    }
+    .info .item i{
+        font-size: 30px;
+    }
+    .info .item h3{
+        text-align: center;
+        padding: 3px;
+        font-size: 20px;
+    }
+    .info .item p{
+        font-size: 13px;
+    }
+    .service h1{
+        margin-top: -20px;
+        font-size: 30px;
+    }
+    
+    .service .boxs .box{
+        padding: 5px;
+        width: 48%;
+        margin: 0px 2px;
+        margin-bottom: 20px;
+    }
+    .service .box i{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .service .box h3{
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .service .box p{
+        font-size: 10px;
+    }
+    .service .box .btn{
+        padding: 5px;
+        font-size: 11px;
+        margin-bottom: 7px
+    }
+    .service .box .btn span{
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+    .about h1{
+        font-size: 35px;
+        margin: -35px 0px;
+    }
+    .about .image{
+        width: 100%;
+    }
+    .about .content{
+        width: 100%;
+        text-align: center;
+    }
+    .about .content h3{
+        margin-bottom: 4px;
+        font-size: 22px;
+    }
+    .about .content p{
+        font-size: 12px;
+    }
+    .about .content .btn{
+        margin-bottom: 20px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+    .about .content .btn span{
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+    .doctor h1{
+        font-size: 35px;
+        margin-top: -20px;
+    }
+    .doctor .boxs .box{
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .doctor .boxs .box .box-img{
+        height: 335px;
+    }
+    #owl-demo .item{
+        margin: 3px;
+      }
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .doctor .box h3{
+        font-size: 14px;
+    }
+    .doctor .box span{
+        font-size: 14px;
+    }
+    .doctor .box .share a{
+        font-size: 11px;
+        margin: 0 1px;
+    }
+    .doctor .box .share a i{
+        padding: 2px;
+        font-size: 11px;
+    }
+    .book h1{
+        font-size: 35px;
+        margin-top: -20px;
+    }
+    .book .image{
+        width: 100%;
+    }
+    .book .content{
+        width: 100%;
+    }
+    .book .content form input{
+        font-size: 16px;
+    }
+    .book .content form .btn{
+        width: 50%;
+    }
+    .reviwe h1{
+        font-size: 35px;
+    }
+    .reviwe .box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .reviwe .box .text{
+        font-size: 13px;
+    }
+    .footer .boxs .box{
+        width: 100%;
+        padding: 0px;
+    }
+    .footer .box h3{
+        font-size: 20px;
+    }
+    .footer .contact-us a{
+        font-size: 13px;
+    }
+}
